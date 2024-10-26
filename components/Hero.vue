@@ -14,11 +14,18 @@
         >
           gaaauu
         </h1>
-        <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
+        <p class="m-6 text-lg leading-8 text-gray-800 dark:text-gray-200">
           Coleção de obras de arte latino-americas disponíveis na
           <em>Wikimedia</em> com descrição de imagem gerada com o modelo
           <em>Gemini Flash 1.5</em>
         </p>
+        <a
+          href="https://ursal.zone/@gaaauu"
+          target="_blank"
+          rel="me"
+          class="text-stone-600 dark:text-stone-400 ring-1 px-4 py-2 ring-stone-600 dark:ring-stone-400 rounded-md hover:text-red-500 hover:ring-red-500"
+          >Siga o bot no Mastodon</a
+        >
       </div>
     </div>
   </header>
