@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-slate-200 dark:bg-slate-950 w-screen h-screen overflow-scroll">
+  <div class="bg-stone-50 dark:bg-stone-950 w-screen h-screen overflow-scroll">
     <slot />
   </div>
 </template>
