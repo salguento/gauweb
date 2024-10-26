@@ -17,6 +17,11 @@ function shuffle(a: any[] | null) {
 }
 
 shuffle(artwork);
+
+useHead({
+  title: "GAAAUU",
+  meta: [{ name: "GAAAUU", content: "Galeria de Arte da URSAL" }],
+});
 </script>
 
 <template>
