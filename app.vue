@@ -1,3 +1,36 @@
+<script setup lang="ts">
+import { createClient } from "@supabase/supabase-js";
+const config = useRuntimeConfig();
+const supabaseUrl = config.public.supabaseUrl;
+const supabaseKey = config.public.supabaseKey;
+
+const supabase = createClient(supabaseUrl, supabaseKey);
+
+const { data: artwork, error } = await supabase.from("artwork").select("*");
+
+function shuffle(a: any[] | null) {
+  for (let i = a!.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a![i], a![j]] = [a![j], a![i]];
+  }
+  return a;
+}
+
+shuffle(artwork);
+</script>
+
 <template>
-  <NuxtLayout> </NuxtLayout>
+  <NuxtLayout>
+    <client-only>
+      <Navbar />
+      <main class="min-h-full">
+        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+          <p>Teste</p>
+          <Hero />
+          <Card :artworks="artwork" />
+        </div>
+      </main>
+      <Footer />
+    </client-only>
+  </NuxtLayout>
 </template>
