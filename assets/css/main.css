@@ -1,0 +1,21 @@
+/* import Asap and Barriecito from google fonts */
+@font-face {
+  font-family: "Barriecito";
+  font-display: swap;
+  src: url("~/assets/fonts/Barriecito-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Asap";
+  font-style: normal;
+  font-display: swap;
+  src: url("~/assets/fonts/Asap-VariableFont_wdth,wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: italic;
+  font-display: swap;
+  src: url("~/assets/fonts/Asap-Italic-VariableFont_wdth,wght.ttf")
+    format("truetype");
+}

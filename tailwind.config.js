@@ -2,8 +2,12 @@
 export default {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Asap"],
+        display: ["Barriecito"],
+      },
+    },
   },
   plugins: [],
-}
-
+};
