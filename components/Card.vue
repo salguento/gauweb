@@ -56,7 +56,7 @@ function handleClear() {
             type="search"
             v-model="input"
             id="default-search"
-            class="block w-full p-4 ps-6 text-sm text-stone-900 border border-stone-300 rounded-lg bg-stone-50 focus:ring-red-500 focus:border-red-500 dark:bg-stone-700 dark:border-stone-600 dark:placeholder-stone-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500"
+            class="block w-full p-4 ps-6 text-sm text-stone-900 border border-stone-300 rounded-lg bg-stone-50 focus:ring-red-500 focus:border-red-500 dark:bg-stone-900 dark:border-stone-600 dark:placeholder-stone-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500 focus:outline-none"
             placeholder="Encontre obras por título, autor, país ou data..."
           />
         </div>
