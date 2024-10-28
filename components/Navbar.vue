@@ -9,11 +9,13 @@
         <div class="flex h-16 items-center justify-between">
           <div class="flex items-center">
             <div class="flex-shrink-0">
-              <img
-                class="h-6"
-                src="/gau-logo.svg"
-                alt="Logotipo GAU em cor vermelha"
-              />
+              <a href="/#home">
+                <img
+                  class="h-6"
+                  src="/gau-logo.svg"
+                  alt="Logotipo GAU em cor vermelha"
+                />
+              </a>
             </div>
           </div>
           <div class="">

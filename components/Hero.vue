@@ -1,5 +1,5 @@
 <template>
-  <header class="">
+  <header class="" id="home">
     <div class="mx-auto max-w-2xl py-12 md:py-24 lg:py-32">
       <div class="hidden sm:flex sm:justify-center">
         <div
@@ -20,9 +20,9 @@
           <em>Gemini Flash 1.5</em>
         </p>
         <a
+          rel="me"
           href="https://ursal.zone/@gaaauu"
           target="_blank"
-          rel="me"
           class="text-stone-600 dark:text-stone-400 ring-1 px-4 py-2 ring-stone-600 dark:ring-stone-400 rounded-md hover:text-red-500 hover:ring-red-500"
           >Siga o bot no Mastodon</a
         >
