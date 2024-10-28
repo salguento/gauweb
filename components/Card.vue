@@ -101,6 +101,7 @@ function handleClear() {
                   <span v-if="artwork.country == 'Bolívia'">🇧🇴</span>
                   <span v-if="artwork.country == 'Brasil'">🇧🇷</span>
                   <span v-if="artwork.country == 'Chile'"> 🇨🇱 </span>
+                  <span v-if="artwork.country == 'Colômbia'">🇨🇴</span>
                   <span v-if="artwork.country == 'Costa Rica'">🇨🇷</span>
                   <span v-if="artwork.country == 'Cuba'">🇨🇺</span>
                   <span v-if="artwork.country == 'Equador'">🇪🇨</span>
