@@ -34,7 +34,7 @@ function handleClear() {
 <template>
   <div>
     <div :class="input ? 'mb-4' : 'mb-[3.75rem]'">
-      <form class="max-w-md mx-auto">
+      <div class="max-w-md mx-auto">
         <label
           for="default-search"
           class="mb-2 text-sm font-medium text-stone-900 sr-only dark:text-white"
@@ -60,7 +60,7 @@ function handleClear() {
             placeholder="Encontre obras por título, autor, país ou data..."
           />
         </div>
-      </form>
+      </div>
     </div>
     <div class="" v-for="artwork in filteredList()" :key="artwork.id"></div>
     <div class="h-full" v-if="input && !filteredList().length">
@@ -94,15 +94,31 @@ function handleClear() {
             />
             <div class="p-5 pt-3">
               <div
-                class="flex justify-start gap-2 text-xs text-stone-700 dark:text-stone-300"
+                class="flex flex-wrap justify-start gap-x-2 text-xs text-stone-700 dark:text-stone-300"
               >
                 <p class="font-normal text-nowrap">
                   <span v-if="artwork.country == 'Argentina'">🇦🇷</span>
                   <span v-if="artwork.country == 'Bolívia'">🇧🇴</span>
                   <span v-if="artwork.country == 'Brasil'">🇧🇷</span>
-                  <span v-if="artwork.country == 'Colômbia'">🇨🇴</span>
                   <span v-if="artwork.country == 'Chile'"> 🇨🇱 </span>
+                  <span v-if="artwork.country == 'Costa Rica'">🇨🇷</span>
                   <span v-if="artwork.country == 'Cuba'">🇨🇺</span>
+                  <span v-if="artwork.country == 'Equador'">🇪🇨</span>
+                  <span v-if="artwork.country == 'El Salvador'">🇸🇻</span>
+                  <span v-if="artwork.country == 'Guatemala'">🇬🇹</span>
+                  <span v-if="artwork.country == 'Haiti'">🇭🇹</span>
+                  <span v-if="artwork.country == 'Honduras'">🇭🇳</span>
+                  <span v-if="artwork.country == 'México'">🇲🇽</span>
+                  <span v-if="artwork.country == 'Nicarágua'">🇳🇮</span>
+                  <span v-if="artwork.country == 'Panamá'">🇵🇦</span>
+                  <span v-if="artwork.country == 'Paraguai'">🇵🇾</span>
+                  <span v-if="artwork.country == 'Peru'">🇵🇪</span>
+                  <span v-if="artwork.country == 'Porto Rico'">🇵🇷</span>
+                  <span v-if="artwork.country == 'República Dominicana'"
+                    >🇩🇴</span
+                  >
+                  <span v-if="artwork.country == 'Uruguai'">🇺🇾</span>
+                  <span v-if="artwork.country == 'Venezuela'">🇻🇪</span>
                   {{ artwork.country }}
                 </p>
                 <p class="font-normal text-nowrap">
