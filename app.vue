@@ -26,16 +26,15 @@ useHead({
 
 <template>
   <NuxtLayout>
-    <client-only>
-      <Navbar />
-      <main class="min-h-full">
-        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-          <p>Teste</p>
-          <Hero />
+    <Navbar />
+    <main class="min-h-full">
+      <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <Hero />
+        <client-only>
           <Card :artworks="artwork" />
-        </div>
-      </main>
-      <Footer />
-    </client-only>
+        </client-only>
+      </div>
+    </main>
+    <Footer />
   </NuxtLayout>
 </template>
